@@ -235,3 +235,85 @@ h3 {
         grid-template-columns: 1fr; /* Для друку краще в один стовпець */
     }
 }
+
+/* 📱 Додатковий адаптив під мобільні */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .card {
+        grid-template-columns: 1fr; /* Sidebar зверху, main нижче */
+    }
+
+    .sidebar {
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .role {
+        font-size: 13px;
+    }
+
+    .contact {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .section-title {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .langs p,
+    .skills-list li {
+        font-size: 12px;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    .summary {
+        font-size: 13px;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .when {
+        font-size: 11px;
+    }
+
+    .two-col {
+        grid-template-columns: 1fr; /* В один стовпчик */
+        gap: 20px;
+    }
+}
